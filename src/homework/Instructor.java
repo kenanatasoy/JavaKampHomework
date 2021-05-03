@@ -2,19 +2,29 @@ package homework;
 
 public class Instructor extends User {
 
-	String instructorCode;
-	String[] coursesGiven;
+	private int id;
+	private String instructorCode;
+	private String[] coursesGiven;
 	
 	public Instructor() {
 		
 	}
 	
-	public Instructor(String instructorCode, String[] coursesGiven) {
+	public Instructor(int id, String instructorCode, String[] coursesGiven) {
 		super();
+		this.id = id;
 		this.instructorCode = instructorCode;
 		this.coursesGiven = coursesGiven;
 	}
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public String getInstructorCode() {
 		return instructorCode;
 	}
